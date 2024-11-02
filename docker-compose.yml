@@ -1,0 +1,28 @@
+﻿services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqldb
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Xak35xzb
+    ports:
+      - "1433:1433"
+    networks:
+      - backend
+
+  hoteldatabase:
+    build:
+      context: ./HotelDatabase
+      dockerfile: Dockerfile
+    depends_on:
+      - sqlserver
+    ports:
+      - "8080:80"
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
+    
+   
