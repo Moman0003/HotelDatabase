@@ -6,8 +6,7 @@ namespace HotelDatabase;
 public class DBClient
 {
     // Opdateret connection string
-    private string connectionString = "Server=127.0.0.1;Database=master;User Id=sa;Password=Xak35xzb;";
-    public void Start()
+    private string connectionString = "Server=localhost,1433;Database=master;User Id=sa;Password=YourPassword;TrustServerCertificate=True;";    public void Start()
     {
         using (SqlConnection connection = new SqlConnection(connectionString))
         {
@@ -15,7 +14,7 @@ public class DBClient
             Console.WriteLine("Connected to the database");
         }
     }
-    
+   
     public void CreateFacility(string facilityName)
     {
         using (SqlConnection connection = new SqlConnection(connectionString))
@@ -91,7 +90,3 @@ public class DBClient
     }
     
 }
-
-
-
-

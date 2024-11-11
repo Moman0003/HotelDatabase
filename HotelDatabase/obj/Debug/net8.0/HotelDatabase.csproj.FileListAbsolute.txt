@@ -20,3 +20,4 @@
 /Users/momans/RiderProjects/HotelDatabase/HotelDatabase/obj/Debug/net8.0/HotelDatabase.pdb
 /Users/momans/RiderProjects/HotelDatabase/HotelDatabase/obj/Debug/net8.0/HotelDatabase.genruntimeconfig.cache
 /Users/momans/RiderProjects/HotelDatabase/HotelDatabase/obj/Debug/net8.0/ref/HotelDatabase.dll
+/Users/momans/RiderProjects/HotelDatabase/HotelDatabase/obj/Debug/net8.0/HotelDatabase.sourcelink.json
