@@ -9,5 +9,13 @@
       <jdbc-url>Server=localhost;Database=master;User Id=sa;Password=Xak35xzb;</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="master@localhost [2]" uuid="826e9c4d-1d42-4d1a-8c14-e610a16ad5e3">
+      <driver-ref>sqlserver.jb</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>com.jetbrains.jdbc.sqlserver.SqlServerDriver</jdbc-driver>
+      <jdbc-url>Server=localhost,1433;Database=master;User Id=sa;Password=Xak35xzb;TrustServerCertificate=True;</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

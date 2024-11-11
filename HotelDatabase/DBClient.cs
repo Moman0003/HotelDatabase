@@ -6,7 +6,9 @@ namespace HotelDatabase;
 public class DBClient
 {
     // Opdateret connection string
-    private string connectionString = "Server=localhost,1433;Database=master;User Id=sa;Password=YourPassword;TrustServerCertificate=True;";    public void Start()
+    private string connectionString = "Server=localhost,1433;Database=master;User Id=sa;Password=Xak35xzb;TrustServerCertificate=True;"; 
+    
+    public void Start()
     {
         using (SqlConnection connection = new SqlConnection(connectionString))
         {
